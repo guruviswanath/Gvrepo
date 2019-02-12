@@ -1,0 +1,65 @@
+//Define spark session object
+
+// set the log level as error
+
+// create a file rdd
+
+//Create a function to identify the category of the customers, function (input as string and output as string) to identify the category of the customers, if the 1st param passed is going to startwith CU,NR... then convert to CURRENT, NRI respectively..
+
+// split the rdd object using comma delimiter and arrive the RDD of array of string
+
+//cache the rdd after reducing the partition to 1
+
+//count the rdd and print the count
+
+Overall count of the rdd is 14
+
+
+//All good transactions having amount more than 1000 rupees transaction
+
+(SB10002,2,1200)
+(SB10003,3,8000)
+(SB10006,2,10000)
+(SB10007,2,5002)
+(SB10010,1,7000)
+(CR10001,2,7000)
+(NR10011,1,10000)
+(CU100013,2,100000)
+
+// Identify the customer cateogory passing the 1st column of the rdd to the function and enrich the output of the map function as given below.
+
+Function applied data
+(SB10001,SAVINGS,1000,1)
+(SB10002,SAVINGS,1200,2)
+(SB10003,SAVINGS,8000,3)
+(SB10004,SAVINGS,400,2)
+(SB10005,SAVINGS,300,1)
+
+//Account wise count sorted by key
+
+Account wise count sorted by key
+(CR10001,1)
+(CU100013,1)
+(NR10011,1)
+(SB10001,1)
+(SB10002,2)
+(SB10003,1)
+(SB10004,1)
+(SB10005,1)
+(SB10006,1)
+(SB10007,1)
+(SB10008,1)
+(SB10009,1)
+(SB10010,1)
+
+//Save only the bank accounts starts with SB alone into hdfs location, specify the complete uri
+
+// Print the bank accounts does not contains SB
+(CU100013,100000,2)
+(NR10011,10000,1)
+(CR10001,7000,2)
+
+//Unpersisting the cache
+
+
+//PRODUCE THE SAME ABOVE RESULT USING SPARK DATAFRAME DSL OR SQL QUERY ALSO
