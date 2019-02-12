@@ -1,0 +1,28 @@
+sqoop to import from RDMS
+flume is to load log files or to import from twitter
+hive to work on SQL
+PiG processing tool, uses scripts to load the data
+advanced map reduce: file formats and ow it works internally
+hbase --> database on top of hadoop but it doesnot support ansci sql
+phoenix --> sql layer on top hbase
+oozie is a scheduler tool
+
+
+spark --> processing engine,it can connect to any data source
+  spark core, spark sql,spark streaming
+
+kafka --> streaming or messaging system, intermediate system b/w source n target
+
+NIFI --> etl tool, web tool, using web UI we can create components, we can read data fro any data source
+
+elastic search --> full tech search engine, highly scalable , faster output with huge amount f data
+
+kibana --> visualisation tool, 
+
+projects --> 	fleet
+		credit card transaction
+
+stat-dfs.sh & start-yarn.sh
+
+
+
